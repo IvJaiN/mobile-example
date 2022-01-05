@@ -1,0 +1,7 @@
+{
+  "name": "tigriss-mobile-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

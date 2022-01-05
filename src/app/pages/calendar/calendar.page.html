@@ -1,0 +1,16 @@
+<ion-header class="button-back__wrapper">
+  <ion-button expand="clear">
+    <p class="button-back">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      <span>Terug</span>
+    </p>
+  </ion-button>
+</ion-header>
+<ion-content [fullscreen]="true" class="">
+  <ion-datetime (ionChange)="onPress($event)" >
+    <ion-buttons slot="buttons">
+      <ion-button color="primary" onClick="() => this.confirm()">Good to go!</ion-button>
+      <ion-button color="danger" onClick="() => this.reset()">Reset</ion-button>
+    </ion-buttons>
+  </ion-datetime>
+</ion-content>

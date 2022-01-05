@@ -1,0 +1,140 @@
+<ion-content [fullscreen]="true" class="home-page">
+    <div class="header">
+        <div class="header-text">
+            <p class="header-title">Hallo Leon</p>
+            <p class="header-date">
+                {{ date | date:'fullDate' }}
+            </p>
+        </div>
+        <div class="header-actions">
+            <ion-button expand="clear" class="button">
+                <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+            </ion-button>
+        </div>
+    </div>
+
+    <div class="main"></div>
+
+    <div class="view">
+        <h6 class="view-title">Overzicht</h6>
+        <ion-card class="view-content__wrapper">
+            <ion-card-content>
+                <div class="view-content">
+                    <div class="view-content__left">
+                        <div class="view-content__text">
+                            <h6 class="view-content__title">Uren gewerkt</h6>
+                            <p class="view-content__subtitle">deze week</p>
+                        </div>
+
+
+                        <ul class="view-content__list">
+                            <li class="view-content__item">Artiflex</li>
+                            <li class="view-content__item">Maintec</li>
+                            <li class="view-content__item">StudiJob</li>
+                        </ul>
+
+                    </div>
+                    <div class="view-content__right">
+                        <p class="view-content__time">40:00</p>
+                        <ion-button class="view-content__time-info" size="large" expand="clear">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                        </ion-button>
+                    </div>
+                </div>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div class="uren">
+        <ion-card button (click)="openCalendar()">
+            <ion-card-content>
+                <p class="uren-card__title">
+                    Ingenplande uren
+                </p>
+                <p class="uren-card__content">32</p>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card button>
+            <ion-card-content>
+                <p class="uren-card__title">
+                    Opgebouwde vakatnie uren
+                </p>
+                <p class="uren-card__content">106</p>
+
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div class="agency">
+        <ion-card>
+            <ion-card-header>
+                <ion-title class="agency-title">Mijn uitzendbureau's</ion-title>
+            </ion-card-header>
+            <ion-card-content class="agency-list__wrapper">
+                <ion-list class="agency-list">
+                    <ion-card class="agency-item__wrapper" button>
+                        <ion-card-content>
+                            <div class="agency-item">
+                                <div class="agency-item__logo"></div>
+                                <p class="agency-item__name">Artiflex</p>
+                            </div>
+                        </ion-card-content>
+                    </ion-card>
+                    <ion-card class="agency-item__wrapper" button>
+                        <ion-card-content>
+                            <div class="agency-item">
+                                <div class="agency-item__logo"></div>
+                                <p class="agency-item__name">maintec</p>
+                            </div>
+                        </ion-card-content>
+                    </ion-card>
+                    <ion-card class="agency-item__wrapper" button>
+                        <ion-card-content>
+                            <div class="agency-item">
+                                <div class="agency-item__logo"></div>
+                                <p class="agency-item__name">StudiJob</p>
+                            </div>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div class="news">
+        <h6 class="view-title">Nieuws</h6>
+        <ion-card class="news-content__wrapper">
+            <ion-card-content>
+                <ion-list class="news-list">
+                    <ion-item class="news-item__wrapper">
+                        <div class="news-item">
+                                <div class="news-item__logo"></div>
+                                <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at delectus iusto nihil quisquam veritatis.</p>
+                            </div>
+                    </ion-item>
+                    <ion-item class="news-item__wrapper">
+                        <div class="news-item">
+                                <div class="news-item__logo"></div>
+                                <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut eveniet incidunt nam natus pariatur.</p>
+                            </div>
+                    </ion-item>
+                    <ion-item class="news-item__wrapper">
+                        <div class="news-item">
+                                <div class="news-item__logo"></div>
+                                <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error expedita itaque nihil omnis quos!</p>
+                            </div>
+                    </ion-item>
+                    <ion-item class="news-item__wrapper">
+                        <div class="news-item">
+                                <div class="news-item__logo"></div>
+                                <p class="news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, fuga non sit sunt temporibus ullam.</p>
+                            </div>
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+</ion-content>
+

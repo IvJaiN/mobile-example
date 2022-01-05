@@ -1,0 +1,23 @@
+.actions {
+  padding-bottom: 90%;
+}
+.button-back {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  span {
+    display: inline-block;
+    color: turquoise;
+    margin-left: 10px;
+  }
+}
+:host {
+  .button-solid {
+    --box-shadow: none !important;
+    --color: gray;
+    text-transform: capitalize;
+  }
+}
+.button-back__wrapper {
+  position: static;
+}

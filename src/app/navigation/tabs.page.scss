@@ -1,0 +1,43 @@
+:host {
+  .tab-selected {
+    color: turquoise;
+  }
+  .tab-plus {
+    height: auto;
+  }
+  ion-tab-bar {
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0 ;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }
+}
+.tabs-wrapper {
+  position: relative;
+}
+.tab-plus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 3px;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+.my-custom-class {
+  background-color: #0d0d0d;
+}
+.customClass {
+  --background: #000000
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+     opacity: 1;
+  }
+}
