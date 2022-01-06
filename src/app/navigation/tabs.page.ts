@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {AnimationController, createAnimation, ModalController} from "@ionic/angular";
 import {WorksPage} from "../pages/works/works.page";
 import {ActionsPage} from "../pages/actions/actions.page";
 import {CalendarPage} from "../pages/calendar/calendar.page";
@@ -14,10 +13,7 @@ export class TabsPage {
 
     constructor(
         private modalServices: ModalService
-    ) {
-    }
-
-
+    ) {}
 
     openScreenLoonstrookjes() {
         this.modalServices.presentModal({
@@ -28,6 +24,7 @@ export class TabsPage {
     openScreenActions() {
         this.modalServices.presentModal({
             initialBreakpoint: 0.5,
+            cssClass: 'action-modal'
         }, ActionsPage);
     }
 

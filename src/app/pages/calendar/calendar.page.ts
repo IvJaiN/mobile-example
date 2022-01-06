@@ -9,6 +9,7 @@ import {ModalService} from "../../services/modal.service";
 export class CalendarPage implements OnInit {
 
   constructor(
+      private modalService: ModalService
   ) { }
 
   ngOnInit() {}
@@ -17,4 +18,11 @@ export class CalendarPage implements OnInit {
     console.log(event.target.value)
   }
 
+  closeModal() {
+    this.modalService.dismiss()
+  }
+
+    changeData($event: any) {
+        console.log($event)
+    }
 }

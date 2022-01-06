@@ -42,6 +42,12 @@ export class ModalService {
     return modal.present();
   }
 
+  dismiss() {
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+  }
+
   constructor(
       public modalController: ModalController,
       public animationCtrl: AnimationController

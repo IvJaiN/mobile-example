@@ -1,12 +1,164 @@
 <ion-header class="button-back__wrapper">
-    <ion-button expand="clear">
-      <p class="button-back">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-        <span>Terug</span>
-      </p>
+    <ion-button expand="clear" (click)="closeModal()">
+        <p class="button-back">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+            <span>Terug</span>
+        </p>
     </ion-button>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad adipisci culpa dicta ea eaque eos fuga modi non odit quasi quidem sit unde veniam, voluptas voluptatem. Aliquam autem deleniti fugit perspiciatis reiciendis. Blanditiis delectus ipsam laborum possimus qui quos recusandae sed, sunt voluptas. Ipsum iure, laboriosam quam quidem reiciendis reprehenderit repudiandae sit veniam. A aliquid deleniti distinctio dolorum magnam minima obcaecati repellat voluptate. Amet commodi consequatur ipsam nam nulla praesentium quaerat temporibus velit. Facere optio rem repellendus. Debitis deserunt eius enim eveniet iusto natus odit pariatur, perferendis placeat ratione sequi temporibus! Aliquam amet aut culpa dicta dolore dolorum earum, eius et eveniet ex excepturi fugiat hic id impedit incidunt ipsa iure, laudantium modi necessitatibus nesciunt omnis pariatur provident quae quis rem rerum sapiente sequi unde, ut vel velit veritatis voluptas voluptates. Aliquam consequatur incidunt nobis perferendis quo? Ab accusantium ad animi asperiores assumenda, cum delectus distinctio enim eos eum ex illum libero obcaecati odio odit optio quam quia reiciendis tenetur voluptates. Aspernatur esse quaerat quisquam. Accusamus eius et id inventore nisi optio tempora. Amet animi culpa cum doloremque ducimus enim eos error esse explicabo hic impedit in incidunt inventore ipsa ipsam laboriosam laborum maiores minima modi nemo nesciunt nisi numquam optio perferendis perspiciatis placeat praesentium, quibusdam quo repellendus repudiandae sunt temporibus ullam vitae! Ad beatae blanditiis dicta dolores doloribus eligendi error eum ex explicabo facere hic id illo inventore maxime nam nulla pariatur perferendis, quae quas quis quo reiciendis sunt tempora vero voluptatum. Accusantium ad alias animi assumenda atque aut autem consequatur culpa deserunt distinctio dolor earum eos, error est ex fuga in inventore itaque iure laudantium magnam mollitia nisi odio praesentium quae quaerat quas, quasi qui quos ratione rerum sit soluta voluptatum. Aliquam assumenda blanditiis eaque earum, ipsa minima numquam quod saepe sunt vero. Animi dicta distinctio dolores, quidem quos unde. Adipisci asperiores deleniti deserunt dignissimos dolorem eius eligendi enim error fuga in maxime mollitia, natus nobis omnis qui quibusdam quidem quisquam rerum temporibus voluptate. Ad adipisci aliquid amet animi aut consequuntur dicta dignissimos dolores esse est eveniet explicabo facere fuga hic itaque labore libero magnam nam necessitatibus, nesciunt nobis non numquam odio officia praesentium quaerat quam quas quasi quis quisquam repellendus rerum sint soluta sunt ut, voluptate voluptatum! A cum deserunt, eius error est harum id laboriosam neque non officiis perspiciatis provident sed similique soluta tempora voluptatibus voluptatum! Commodi, dignissimos dolor ea eaque, earum esse ex excepturi exercitationem, id incidunt magnam nam non optio placeat quae quibusdam quidem rem tempore veniam voluptates? Adipisci aliquid debitis deleniti enim error laborum non numquam perspiciatis, praesentium reprehenderit? A adipisci architecto asperiores at autem corporis culpa cum dolores ducimus ea eaque eligendi esse fuga harum hic illo incidunt iste iure iusto minus mollitia necessitatibus nobis numquam odit officiis perspiciatis quam quas ratione sapiente soluta tempore totam vel veniam veritatis vitae, voluptatem voluptatum? Dolores ducimus pariatur porro. Ab asperiores consequuntur delectus, dignissimos earum, et eveniet, expedita magnam necessitatibus nemo nisi officia officiis omnis quae quas quibusdam unde velit veniam vero voluptatibus.</div>
+<ion-content fullscreen class="actions-content__wrapper">
+
+    <ion-toolbar>
+        <ion-title size="large">Nieuwe registratie</ion-title>
+    </ion-toolbar>
+
+    <ion-card button (click)="changePageUren()">
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                         viewBox="0 0 512 512"
+                         fill="turquoise">
+                        <path d="M329.372 374.628l-105.372-105.373v-141.255h64v114.745l86.628 86.627zM256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zM256 448c-106.039 0-192-85.961-192-192s85.961-192 192-192c106.039 0 192 85.961 192 192s-85.961 192-192 192z"></path>
+                    </svg>
+                    <p>Uren</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35" height="30"
+                         viewBox="0 0 512 448"
+                         fill="turquoise">
+                        <path d="M120 272c0-22-18-40-40-40s-40 18-40 40 18 40 40 40 40-18 40-40zM129 192h254l-22.25-89.25c-0.75-2.75-5.75-6.75-8.75-6.75h-192c-3 0-8 4-8.75 6.75zM472 272c0-22-18-40-40-40s-40 18-40 40 18 40 40 40 40-18 40-40zM512 248v96c0 4.5-3.5 8-8 8h-24v32c0 26.5-21.5 48-48 48s-48-21.5-48-48v-32h-256v32c0 26.5-21.5 48-48 48s-48-21.5-48-48v-32h-24c-4.5 0-8-3.5-8-8v-96c0-31 25-56 56-56h7l26.25-104.75c7.75-31.5 38.25-55.25 70.75-55.25h192c32.5 0 63 23.75 70.75 55.25l26.25 104.75h7c31 0 56 25 56 56z"></path>
+                    </svg>
+                    <p>Ritten</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="30"
+                         viewBox="0 0 384 448"
+                         fill="turquoise">
+                        <path d="M367 95c9.25 9.25 17 27.75 17 41v288c0 13.25-10.75 24-24 24h-336c-13.25 0-24-10.75-24-24v-400c0-13.25 10.75-24 24-24h224c13.25 0 31.75 7.75 41 17zM256 34v94h94c-1.5-4.25-3.75-8.5-5.5-10.25l-78.25-78.25c-1.75-1.75-6-4-10.25-5.5zM352 416v-256h-104c-13.25 0-24-10.75-24-24v-104h-192v384h320zM96 200c0-4.5 3.5-8 8-8h176c4.5 0 8 3.5 8 8v16c0 4.5-3.5 8-8 8h-176c-4.5 0-8-3.5-8-8v-16zM280 256c4.5 0 8 3.5 8 8v16c0 4.5-3.5 8-8 8h-176c-4.5 0-8-3.5-8-8v-16c0-4.5 3.5-8 8-8h176zM280 320c4.5 0 8 3.5 8 8v16c0 4.5-3.5 8-8 8h-176c-4.5 0-8-3.5-8-8v-16c0-4.5 3.5-8 8-8h176z"></path>
+                    </svg>
+
+                    <p>Uitgoven</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="30"
+                         viewBox="0 0 224 448"
+                         fill="turquoise">
+                        <path d="M221.25 141.5c2.75 3 3.5 7.25 1.75 11l-135 289.25c-2 3.75-6 6.25-10.5 6.25-1 0-2.25-0.25-3.5-0.5-5.5-1.75-8.75-7-7.5-12.25l49.25-202-101.5 25.25c-1 0.25-2 0.25-3 0.25-2.75 0-5.75-1-7.75-2.75-3-2.5-4-6.25-3.25-9.75l50.25-206.25c1.25-4.75 5.75-8 11-8h82c6.25 0 11.25 4.75 11.25 10.5 0 1.5-0.5 3-1.25 4.5l-42.75 115.75 99-24.5c1-0.25 2-0.5 3-0.5 3.25 0 6.25 1.5 8.5 3.75z"></path>
+                    </svg>
+                    <p>Lorem ipsum</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="30"
+                         viewBox="0 0 224 448"
+                         fill="turquoise">
+                        <path d="M221.25 141.5c2.75 3 3.5 7.25 1.75 11l-135 289.25c-2 3.75-6 6.25-10.5 6.25-1 0-2.25-0.25-3.5-0.5-5.5-1.75-8.75-7-7.5-12.25l49.25-202-101.5 25.25c-1 0.25-2 0.25-3 0.25-2.75 0-5.75-1-7.75-2.75-3-2.5-4-6.25-3.25-9.75l50.25-206.25c1.25-4.75 5.75-8 11-8h82c6.25 0 11.25 4.75 11.25 10.5 0 1.5-0.5 3-1.25 4.5l-42.75 115.75 99-24.5c1-0.25 2-0.5 3-0.5 3.25 0 6.25 1.5 8.5 3.75z"></path>
+                    </svg>
+                    <p>Lorem ipsum</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="30"
+                         viewBox="0 0 224 448"
+                         fill="turquoise">
+                        <path d="M221.25 141.5c2.75 3 3.5 7.25 1.75 11l-135 289.25c-2 3.75-6 6.25-10.5 6.25-1 0-2.25-0.25-3.5-0.5-5.5-1.75-8.75-7-7.5-12.25l49.25-202-101.5 25.25c-1 0.25-2 0.25-3 0.25-2.75 0-5.75-1-7.75-2.75-3-2.5-4-6.25-3.25-9.75l50.25-206.25c1.25-4.75 5.75-8 11-8h82c6.25 0 11.25 4.75 11.25 10.5 0 1.5-0.5 3-1.25 4.5l-42.75 115.75 99-24.5c1-0.25 2-0.5 3-0.5 3.25 0 6.25 1.5 8.5 3.75z"></path>
+                    </svg>
+                    <p>Lorem ipsum</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button>
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="30"
+                         viewBox="0 0 224 448"
+                         fill="turquoise">
+                        <path d="M221.25 141.5c2.75 3 3.5 7.25 1.75 11l-135 289.25c-2 3.75-6 6.25-10.5 6.25-1 0-2.25-0.25-3.5-0.5-5.5-1.75-8.75-7-7.5-12.25l49.25-202-101.5 25.25c-1 0.25-2 0.25-3 0.25-2.75 0-5.75-1-7.75-2.75-3-2.5-4-6.25-3.25-9.75l50.25-206.25c1.25-4.75 5.75-8 11-8h82c6.25 0 11.25 4.75 11.25 10.5 0 1.5-0.5 3-1.25 4.5l-42.75 115.75 99-24.5c1-0.25 2-0.5 3-0.5 3.25 0 6.25 1.5 8.5 3.75z"></path>
+                    </svg>
+                    <p>Lorem ipsum</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+    <ion-card button (click)="changePageUren()">
+        <ion-card-content>
+            <div class="actions-item">
+                <div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                         viewBox="0 0 512 512"
+                         fill="turquoise">
+                        <path d="M329.372 374.628l-105.372-105.373v-141.255h64v114.745l86.628 86.627zM256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zM256 448c-106.039 0-192-85.961-192-192s85.961-192 192-192c106.039 0 192 85.961 192 192s-85.961 192-192 192z"></path>
+                    </svg>
+                    <p>Uren</p>
+                </div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="30" viewBox="0 0 152 448"
+                     fill="turquoise">
+                    <path d="M148.75 240c0 2-1 4.25-2.5 5.75l-116.5 116.5c-1.5 1.5-3.75 2.5-5.75 2.5s-4.25-1-5.75-2.5l-12.5-12.5c-1.5-1.5-2.5-3.5-2.5-5.75 0-2 1-4.25 2.5-5.75l98.25-98.25-98.25-98.25c-1.5-1.5-2.5-3.75-2.5-5.75s1-4.25 2.5-5.75l12.5-12.5c1.5-1.5 3.75-2.5 5.75-2.5s4.25 1 5.75 2.5l116.5 116.5c1.5 1.5 2.5 3.75 2.5 5.75z"></path>
+                </svg>
+            </div>
+        </ion-card-content>
+    </ion-card>
+
+    <div class="actions-void"></div>
+
 </ion-content>

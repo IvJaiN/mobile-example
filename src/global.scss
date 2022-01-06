@@ -46,4 +46,20 @@ ion-content {
   }
 }
 
+:host {
+  .modal-interactive.modal-wrapper {
+    --border-radius: 15px;
+  }
+}
+.modal-wrapper{
+  --border-radius: 15px!important;
+}
 
+:host {
+  .modal-wrapper.ion-overlay-wrapper{
+      border-radius: 15px;
+  }
+}
+:host(.modal-interactive) .modal-wrapper, :host(.modal-interactive) ion-backdrop {
+  background: #1f1f1f;
+}

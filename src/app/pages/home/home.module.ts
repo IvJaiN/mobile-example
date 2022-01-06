@@ -1,7 +1,6 @@
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { HomeRoutingModule } from './home-routing.module';
 
@@ -9,7 +8,6 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     IonicModule,
     CommonModule,
-    FormsModule,
     HomeRoutingModule
   ],
   declarations: [HomePage]
